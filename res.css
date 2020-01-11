@@ -1,0 +1,129 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+html { 
+    font-size: 62.5%;
+    background-color: rgb(92, 91, 91); }
+
+body { box-sizing: border-box; }
+
+.thankYou--container, .signIn--container {
+    width: 50%;   
+    text-align: center;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #3d3d3d;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.22);
+}
+
+.thankYou--container {  
+    position: relative;
+    top: 7rem;
+    left: 45rem;
+}
+
+.signIn--container {
+    position: relative;
+    top: 17rem; 
+    left: 45rem;
+}
+
+.thankYou__heading--main, .signIn-form-heading {
+    background: linear-gradient(to right bottom, #1bd1d1 5%, #22c4c4 100%);
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(92, 91, 91);
+    font-size: 4rem;
+    font-weight: 300;
+    padding: 2rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.22);
+}
+
+h2, h3 {
+     color: #1bd1d1;
+    letter-spacing: 2px;
+    padding: .5rem;
+}
+.thankYou__heading--sub {
+    font-size: 3rem;
+
+}
+.thankYou__heading--sub2 {
+    font-size: 2.4rem;
+}
+
+p{
+    outline: none;
+    display: block;
+    width: 80%;
+    padding: 1rem;
+    color: rgb(201, 198, 198);
+    font-size: 2rem;
+    line-height: 28px;
+
+    text-align: justify;
+
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1.5rem auto;
+
+} 
+
+#signIn-form input[type="text"],
+#signIn-form input[type="password"] {
+
+     outline: none;
+    display: block;
+    width: 80%;
+    padding: 1rem;
+
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1.5rem auto;
+    border-bottom: 1px solid #ddd;
+    box-shadow: inset 0px 0px 25px rgba(0,0,0,0.22);
+
+    border-radius: 5px;
+    font-size: 2rem;
+}
+
+#signIn-form input[type="button"] {
+    box-shadow: inset 0px 1px 0px 0px #45d6d6;
+    background-color: #2cbbbb;;
+    border: solid 1px #27a0a0;
+    cursor: pointer;
+    display: inline-block;
+    margin: 2rem auto;
+    border-radius: 50px;
+    padding: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    text-align: center;
+    width: 50%;
+
+}
+
+.btn:hover {
+    background: linear-gradient(to bottom, #34caca 5%, #30c9c9 100%);
+    color: white;
+    transform: translateY(3px);
+    box-shadow: 0 10px 20px rgba(51, 51, 51, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px); /* -1 is in relation to the initial state not the -3px state */
+    box-shadow: 0 5px 10px rgba(102, 101, 101, 0.2);
+}
+
+.btn, 
+.btn:focus,
+.btn:active,
+.btn:hover {
+    outline: none !important;
+}

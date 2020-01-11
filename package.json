@@ -1,0 +1,16 @@
+{
+  "name": "signup_for_newsletter",
+  "version": "1.0.0",
+  "description": "A newsletter signup page that will be used MailChimps API",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Ashley Mazzonna",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
+  }
+}
