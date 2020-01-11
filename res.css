@@ -22,13 +22,13 @@ body { box-sizing: border-box; }
 
 .thankYou--container {  
     position: relative;
-    top: 7rem;
+    top: 5rem;
     left: 45rem;
 }
 
 .signIn--container {
     position: relative;
-    top: 17rem; 
+    top: 12rem; 
     left: 45rem;
 }
 
