@@ -78,6 +78,7 @@ body { box-sizing: border-box; }
     position: relative;
     right: 5px;
     margin-right: 4px;
+    color: #27a0a0;
   }
   input[type=date]::-webkit-inner-spin-button {
     height: 30px;
@@ -96,9 +97,8 @@ body { box-sizing: border-box; }
     }
 
     input[type=date]:active {
-      color: blue;
+      color: #27a0a0;
     }
-
 
 
 .form-style input[type="button"] {
@@ -137,4 +137,17 @@ body { box-sizing: border-box; }
 .btn:active,
 .btn:hover {
     outline: none !important;
+}
+
+.small {
+    margin: -1rem 5.1rem 0 5.1rem;
+
+}
+
+.subSmall, .small {
+    padding: 0 3rem;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #27a0a0;
+    
 }
