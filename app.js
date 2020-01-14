@@ -1,9 +1,9 @@
 //jshint esversion:6
-// 7b3b90bd62849b80421c1cbfc807ff48-us4 mailchimp api key
 
 const express = require('./node_modules/express');
 const bodyParser = require("./node_modules/body-parser");
 const request = require("./node_modules/request");
+const config = require("./node_modules/config")
 
 const app = express();
 app.use(express.static("public"));
@@ -18,15 +18,47 @@ app.get("/", function (req, res) {
 });
 
 app.post("/", function(req, res) {
-    let first_name, last_name, Dob, email, password;
+    let first_name, last_name, Dob, email, userName, password;
 
     first_name = req.body.fname;
+    last_name = req.body.lname; 
     email = req.body.email;
-    password = req.body.password;
 
-    console.log(`User first name: ${first_name}. User's email address: ${email}. User password: ${password}`);
+    var data = {
+        members: [
+            {
+                email_address: email, 
+                status: "subscribed"
+            }
+        ]
+    };
+
+    var jsonData = JSON.stringify(data);
+
+    // dob = req.body.dob;
+    // userName = req.body.username;
+    // password = req.body.password;
+
+    options = {
+        url: "https://us4.api.mailchimp.com/3.0/lists/"+config.get(audienceId),
+        method: "POST",
+        headers: {
+            "Authorization": "ashley " + config.get(apiKey)
+        },
+        body: jsonData
+    };
+
+    request(options, function(error, response, body) {
+        if (error) {
+            console.log(error);
+        } else {
+            console.log(response.statusCode);
+        }
+
+    });
+
+    // console.log(`User first name: ${first_name}. User's email address: ${email}. User password: ${password}`);
 });
-
 
 app.listen(4000, function () {
     console.log("server is running on port 4000");
