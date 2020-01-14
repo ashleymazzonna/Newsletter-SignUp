@@ -5,31 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>Newsletter Signup</title>
 </head>
 
 <body>
 
     <div class="signup--container">
-        <form id="signup-form" class="form-style" autocomplete="off" action="/" method="get">
+        <form id="signup-form" class="form-style" autocomplete="off" action="/" method="post">
             <h2 id="signup-form-heading" class="heading">Signup for our Newsletter</h2>
 
-            <input title="Required" type="text" name="client-first-name" placeholder="* First Name" title="client-first-name" required>
-            <input type="text" name="client-last-name" placeholder="Last Name" title="client-last-name" >
+            <input  type="text" name="fname" placeholder="* First Name" title="first-name" required title="Required">
 
-            <input title="Required" type="email" name="client-email" placeholder="* Email" title="client-email" required>
+            <input type="text" name="lname" placeholder="Last Name" title="last-name" >
 
-            <input type="date" class="inputDate" name="client-dob" placeholder="Date of Birth" title="client-dob">
-            <input type="text" name="client-user" placeholder="* What do you want your for your USERNAME?"
-                title="client-user">
-            <input autocomplete="off" type="password" name="current-password" placeholder="* Password" title="current-password" required>
+            <input  type="email" name="email" placeholder="* Email" title="email" required title="Required">
+
+            <input type="date" class="inputDate" name="dob" placeholder="Date of Birth" title="dob">
+
+            <input type="text" name="username" placeholder="* What do you want your for your USERNAME?"
+                title="Required">
+
+            <input type="password" name="password" placeholder="* Password" required title="Required">
 
             <p class="small">Password must have one capital letter, one number and one special character </p>
                 <p class="subSmall"> (We unserstand how much everyone hates this, but it is to ensure your account is secure)</p>
                 <P class="subSmall">* REQUIRED</P>
 
-            <button id="signupBtn" type="submit" class="btn" value="Sign Up"><a class="btn" href="res.html">sign up</button></a>
+            <button id="signupBtn" type="submit" class="btn" value="Sign Up">sign up</button>
 
 
         </form>
