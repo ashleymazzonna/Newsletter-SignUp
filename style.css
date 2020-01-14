@@ -35,7 +35,8 @@ body { box-sizing: border-box; }
     text-align: center;
     text-transform: uppercase;
     color: rgb(92, 91, 91);
-    font-size: 2rem;
+    font-size: 3rem;
+    text-shadow: 0 2px.5rem rgba(61, 61, 61, 0.22);
     font-weight: 200;
     padding: 2rem;
     border-radius: 5px;
@@ -46,7 +47,8 @@ body { box-sizing: border-box; }
 .form-style input[type="text"],
 .form-style input[type="email"],
 .form-style input[type="password"],
-.form-style input[type="date"], .inputDate {
+.form-style input[type="date"], .inputDate
+{
     outline: none;
     display: block;
     width: 80%;
@@ -101,7 +103,7 @@ body { box-sizing: border-box; }
     }
 
 
-.form-style input[type="button"] {
+button.btn {
     box-shadow: inset 0px 1px 0px 0px #45d6d6;
     background-color: #2cbbbb;;
     border: solid 1px #27a0a0;
@@ -125,11 +127,13 @@ body { box-sizing: border-box; }
     color: white;
     transform: translateY(3px);
     box-shadow: 0 10px 20px rgba(51, 51, 51, 0.2);
+    text-shadow: 0 2px.5rem rgba(61, 61, 61, 0.22);
 }
 
 .btn:active {
     transform: translateY(-1px); /* -1 is in relation to the initial state not the -3px state */
     box-shadow: 0 5px 10px rgba(102, 101, 101, 0.2);
+    text-shadow: 0 2px.5rem rgba(61, 61, 61, 0.22);
 }
 
 .btn, 
@@ -140,14 +144,14 @@ body { box-sizing: border-box; }
 }
 
 .small {
-    margin: -1rem 5.1rem 0 5.1rem;
-
+    margin: 0 5.1rem 0 5.1rem;
 }
 
 .subSmall, .small {
-    padding: 0 3rem;
+    padding: .2rem 1rem;
     font-size: 1.3rem;
     text-align: center;
     color: #27a0a0;
     
 }
+

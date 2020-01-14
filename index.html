@@ -12,22 +12,24 @@
 <body>
 
     <div class="signup--container">
-        <form id="signup-form" class="form-style">
+        <form id="signup-form" class="form-style" autocomplete="off" action="/" method="get">
             <h2 id="signup-form-heading" class="heading">Signup for our Newsletter</h2>
 
-            <input type="text" name="client-first-name" placeholder="First Name" title="client-first-name">
-            <input type="text" name="client-last-name" placeholder="Last Name" title="client-last-name">
+            <input title="Required" type="text" name="client-first-name" placeholder="* First Name" title="client-first-name" required>
+            <input type="text" name="client-last-name" placeholder="Last Name" title="client-last-name" >
 
-            <input type="email" name="client-email" placeholder="Email" title="client-email">
+            <input title="Required" type="email" name="client-email" placeholder="* Email" title="client-email" required>
 
             <input type="date" class="inputDate" name="client-dob" placeholder="Date of Birth" title="client-dob">
-            <input type="text" name="client-user" placeholder="What do you want your for your USERNAME?"
+            <input type="text" name="client-user" placeholder="* What do you want your for your USERNAME?"
                 title="client-user">
-            <input type="password" name="current-password" placeholder="Password" title="current-password" required>
+            <input autocomplete="off" type="password" name="current-password" placeholder="* Password" title="current-password" required>
+            
             <p class="small">Password must have one capital letter, one number and one special character </p>
                 <p class="subSmall"> (We unserstand how much everyone hates this, but it is to ensure your account is secure)</p>
+                <P class="subSmall">* REQUIRED</P>
 
-            <input id="signupBtn" type="button" class="btn" value="Sign Up" id="btn-signup">
+            <button id="signupBtn" type="submit" class="btn" value="Sign Up">sign up</button>
 
 
         </form>

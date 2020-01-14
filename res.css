@@ -34,10 +34,11 @@ body { box-sizing: border-box; }
 
 .thankYou__heading--main, .signIn-form-heading {
     background: linear-gradient(to right bottom, #1bd1d1 5%, #22c4c4 100%);
+    text-shadow: 0 5px.5rem rgba(61, 61, 61, 0.22);
     text-align: center;
     text-transform: uppercase;
     color: rgb(92, 91, 91);
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 300;
     padding: 2rem;
     border-radius: 5px;
@@ -64,15 +65,17 @@ p{
     width: 80%;
     padding: 1rem;
     color: rgb(201, 198, 198);
-    font-size: 2rem;
-    line-height: 28px;
-
+    font-size: 1.5rem;
+    line-height: 27px;
     text-align: justify;
-
     font-family: Arial, Helvetica, sans-serif;
     margin: 1.5rem auto;
-
 } 
+
+.thankYou--para {
+    
+}
+
 
 #signIn-form input[type="text"],
 #signIn-form input[type="password"] {
