@@ -73,14 +73,14 @@ p{
 } 
 
 .thankYou--para {
-    
+
 }
 
 
 #signIn-form input[type="text"],
 #signIn-form input[type="password"] {
 
-     outline: none;
+    outline: none;
     display: block;
     width: 80%;
     padding: 1rem;
@@ -94,7 +94,7 @@ p{
     font-size: 2rem;
 }
 
-#signIn-form input[type="button"] {
+#signIn-form input[type="button"]{
     box-shadow: inset 0px 1px 0px 0px #45d6d6;
     background-color: #2cbbbb;;
     border: solid 1px #27a0a0;
