@@ -7,9 +7,9 @@ const app = express();
 const keys = require('./.js/keys');
 
 let api = keys.apiKey;
-console.log(api);
+
 let audienceId = keys.audienceId;
-console.log(audienceId);
+
 
 app.use(express.static("public"));
 
