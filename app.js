@@ -1,15 +1,21 @@
-//jshint esversion:6
-
 const express = require('./node_modules/express');
 const bodyParser = require("./node_modules/body-parser");
 const request = require("./node_modules/request");
-const config = require("./node_modules/config")
+// const config = require("./node_modules/config")
 
 const app = express();
+const keys = require('./.js/keys');
+
+let api = keys.apiKey;
+console.log(api);
+let audienceId = keys.audienceId;
+console.log(audienceId);
+
 app.use(express.static("public"));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
 
 
 app.get("/", function (req, res) {
@@ -40,13 +46,14 @@ app.post("/", function(req, res) {
     // password = req.body.password;
 
     options = {
-        url: "https://us4.api.mailchimp.com/3.0/lists/"+config.get(audienceId),
+        url: "https://us4.api.mailchimp.com/3.0/lists/" + audienceId,
         method: "POST",
         headers: {
-            "Authorization": "ashley " + config.get(apiKey)
+            "Authorization": "ashley " + api
         },
         body: jsonData
     };
+    
 
     request(options, function(error, response, body) {
         if (error) {
